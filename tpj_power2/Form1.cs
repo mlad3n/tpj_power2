@@ -16,5 +16,22 @@ namespace tpj_power2
         {
             InitializeComponent();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ppt_test01DataSet.test_table02' table. You can move, or remove it, as needed.
+            this.test_table02TableAdapter.Fill(this.ppt_test01DataSet.test_table02);
+
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
