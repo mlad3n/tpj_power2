@@ -17,9 +17,10 @@ namespace tpj_power2
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e) // new report
         {
-
+            var newReportForm = new Form2();
+            newReportForm.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)

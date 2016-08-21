@@ -29,22 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.modify_old_report = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.add_new_report = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.ppt_test01DataSet = new tpj_power2.ppt_test01DataSet();
             this.testtable02BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ppt_test01DataSet = new tpj_power2.ppt_test01DataSet();
             this.test_table02TableAdapter = new tpj_power2.ppt_test01DataSetTableAdapters.test_table02TableAdapter();
-            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.ppttest01DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.ppt_test01DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testtable02BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppt_test01DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppttest01DataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,40 +87,22 @@
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 63);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(394, 290);
+            this.listBox1.Size = new System.Drawing.Size(391, 290);
             this.listBox1.TabIndex = 6;
-            // 
-            // ppt_test01DataSet
-            // 
-            this.ppt_test01DataSet.DataSetName = "ppt_test01DataSet";
-            this.ppt_test01DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // testtable02BindingSource
             // 
             this.testtable02BindingSource.DataMember = "test_table02";
             this.testtable02BindingSource.DataSource = this.ppt_test01DataSet;
             // 
+            // ppt_test01DataSet
+            // 
+            this.ppt_test01DataSet.DataSetName = "ppt_test01DataSet";
+            this.ppt_test01DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // test_table02TableAdapter
             // 
             this.test_table02TableAdapter.ClearBeforeFill = true;
-            // 
-            // chart1
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.DataSource = this.ppttest01DataSetBindingSource;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(592, 47);
-            this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(300, 300);
-            this.chart1.TabIndex = 7;
-            this.chart1.Text = "chart1";
-            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // ppttest01DataSetBindingSource
             // 
@@ -136,8 +113,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(975, 393);
-            this.Controls.Add(this.chart1);
+            this.ClientSize = new System.Drawing.Size(415, 393);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.add_new_report);
             this.Controls.Add(this.button2);
@@ -146,9 +122,8 @@
             this.Name = "Form1";
             this.Text = "PowerPoint reporter";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.ppt_test01DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testtable02BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ppt_test01DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ppttest01DataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -164,7 +139,6 @@
         private ppt_test01DataSet ppt_test01DataSet;
         private System.Windows.Forms.BindingSource testtable02BindingSource;
         private ppt_test01DataSetTableAdapters.test_table02TableAdapter test_table02TableAdapter;
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.BindingSource ppttest01DataSetBindingSource;
     }
 }
