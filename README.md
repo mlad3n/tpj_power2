@@ -1,6 +1,6 @@
 # tpj_power2
 
-#### Final project for the exam "Teorija Progamskih Jezika" at my university. Small desktop app which should minimize the effort needed for tedious task of generating periodic reports with images from a number of different but constant sources, with the ability to generate some of the reports on its own directly from the database.
+#### Final project for the exam "Teorija Progamskih Jezika" at my university. Small desktop app which should minimize the effort needed for tedious task of generating periodic reports with images from a number of different but constant sources.
 
 ##IDEA  
 Izvestaji mogu da budu periodicni ili zakazani( ili odmah).  
@@ -16,19 +16,19 @@ Sve sto je ostalo je da neko prodje kroz slajdove i dokuca potrebna posebna obja
   - [ ] __SETUP__  
     - [x] Git  
     - [ ] Add Microsoft Server databases for later testing  
-    - [ ] Add VisualStudio SSDT  
-    - [ ] Test connecting and basic operations  
+    - [x] Add VisualStudio SSDT  
+    - [x] Test connecting and basic operations  
   - [ ] __INTERFACE__  
-    - [ ] Interface organization  
-    - [ ] Initial interface  
-    - [ ] Dinamically add interface components
+    - [x] Interface organization  
+    - [x] Initial interface  
+    - [x] Dinamically add interface components
     - [ ] Beautify  
   - [ ] __BACKEND__  
-    - [ ] Dynamically add interface components  
+    - [x] Dynamically add interface components  
     - [ ] Add event schedulers  
-    - [ ] Add powerpoint functionality  
-    - [ ] Add whole loop for images usecase  
-    - [ ] Test images usecase  
+    - [x] Add powerpoint functionality  
+    - [x] Add whole loop for images usecase  
+    - [x] Test images usecase  
     - [ ] Figure out all needed parameters for chart component  
     - [ ] Define standard representations of datasets
     - [ ] Add whole loop for chart usecase
