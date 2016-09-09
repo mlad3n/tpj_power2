@@ -24,8 +24,7 @@ Sve sto je ostalo je da neko prodje kroz slajdove i dokuca potrebna posebna obja
     - [ ] Beautify  
   - [ ] __BACKEND__  
     - [x] Dynamically add interface components  
-    - [ ] Storing and reading from db
-    - [ ] Add event schedulers  
-    - [x] Add powerpoint functionality  
-    - [x] Add whole loop for usecase  
-    - [x] Test images usecase  
+    - [x] Storing and reading from db
+    - [x] Add event schedulers  
+    - [ ] Add powerpoint functionality  
+    - [ ] Test usecase  
