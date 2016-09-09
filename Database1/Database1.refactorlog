@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="6fa7fcea-2c0b-4773-8a5a-3a76317a8700" ChangeDateTime="08/27/2016 21:40:51">
+    <Property Name="ElementName" Value="[dbo].[main].[status]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[main]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="active" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="84c45017-d89e-4203-982a-1dc0ae7b6ed7" ChangeDateTime="08/27/2016 21:43:01">
+    <Property Name="ElementName" Value="[dbo].[main].[save_to]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[main]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="save_to_path" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6696aa40-1d43-49c0-b808-388b58334f0d" ChangeDateTime="08/27/2016 21:47:26">
+    <Property Name="ElementName" Value="[dbo].[chapter].[name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[chapter]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="report" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="aaaa734f-eec6-4ab8-8259-1f7f88d7b09a" ChangeDateTime="08/27/2016 21:47:35">
+    <Property Name="ElementName" Value="[dbo].[main].[name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[main]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="report" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a5f3d7f7-1724-4cc4-a5d9-0d0c34370e59" ChangeDateTime="08/27/2016 21:47:49">
+    <Property Name="ElementName" Value="[dbo].[source].[name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[source]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="report" />
+  </Operation>
+</Operations>

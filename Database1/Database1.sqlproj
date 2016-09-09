@@ -63,7 +63,8 @@
     <Folder Include="dbo\Tables\" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\test_table_01.sql" />
-    <Build Include="dbo\Tables\test_table02.sql" />
+    <Build Include="dbo\Tables\chapter.sql" />
+    <Build Include="dbo\Tables\main.sql" />
+    <Build Include="dbo\Tables\source.sql" />
   </ItemGroup>
 </Project>
