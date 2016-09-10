@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using UserSettingsDemo.Properties;
 using Microsoft.Win32.TaskScheduler;
 
 namespace tpj_power2
