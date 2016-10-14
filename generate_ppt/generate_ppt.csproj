@@ -33,6 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Spire.License">
+      <HintPath>..\test2\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf">
+      <HintPath>..\test2\Spire.Pdf.dll</HintPath>
+    </Reference>
     <Reference Include="Spire.Presentation">
       <HintPath>.\Spire.Presentation.dll</HintPath>
     </Reference>

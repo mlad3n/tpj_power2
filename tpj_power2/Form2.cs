@@ -166,6 +166,7 @@ namespace tpj_power2
             TextBox pom_textbox = new TextBox();
             pom_textbox.Width = sparent.Width - 20;
             pom_textbox.TextAlign = HorizontalAlignment.Right;
+            pom_textbox.Name = "source_" + (new Random()).NextDouble().ToString();
             sparent.Controls.Add(pom_textbox);
             Button pom_button = new Button();
             pom_button.Text = "Browse source";
@@ -231,7 +232,7 @@ namespace tpj_power2
         private void button4_Click(object sender, EventArgs e)
         {
             OpenFileDialog choofdlog = new OpenFileDialog();
-            choofdlog.Filter = "PowerPoint slides (*.pptx)|*.pptx";
+            choofdlog.Filter = "Image files (*.*)|*.*";
             choofdlog.FilterIndex = 1;
 
             if (choofdlog.ShowDialog() == DialogResult.OK)
@@ -239,18 +240,6 @@ namespace tpj_power2
                 string sFileName = choofdlog.FileName;
                 ((Control)sender).Parent.GetNextControl(((Control)sender), false).Text = sFileName;
             }
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (comboBox1.Enabled) comboBox1.Enabled = false;
-            else comboBox1.Enabled = true;
-        }
-
-        private void radioButton4_CheckedChanged(object sender, EventArgs e)
-        {
-            if (monthCalendar1.Enabled) monthCalendar1.Enabled = false;
-            else monthCalendar1.Enabled = true;
         }
 
         private void button1_Click(object sender, EventArgs e) // ADD BUTTON
@@ -280,9 +269,7 @@ namespace tpj_power2
                             object o2 = scc.ExecuteNonQuery();
                             source_num = 1;
                         }
-                    }
-                    {
-                        if (cc.GetType().ToString() == "System.Windows.Forms.TextBox")
+                        if (cname == "source")
                         {
                             string insert_source = "insert into [script] values ( '" + textBox1.Text + "' ," + chapter_number.ToString() + " , " + source_num.ToString() + ", '" + cc.Text + "' )";
                             SqlCommand sccc = new SqlCommand(insert_source, conn);
@@ -297,6 +284,16 @@ namespace tpj_power2
             conn.Close();
             mainForm.refresh_table();
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e) // CANCEL BUTTON
+        {
+            this.Close();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
