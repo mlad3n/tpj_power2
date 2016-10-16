@@ -65,6 +65,6 @@
   <ItemGroup>
     <Build Include="dbo\Tables\chapter.sql" />
     <Build Include="dbo\Tables\main.sql" />
-    <Build Include="dbo\Tables\source.sql" />
+    <Build Include="dbo\Tables\script.sql" />
   </ItemGroup>
 </Project>
